@@ -24,6 +24,11 @@
             android:name=".Menu_detail"
             android:exported="false" />
         <activity
+            android:name=".VideoActivity"
+            android:exported="false" />
+
+        <activity
+
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
