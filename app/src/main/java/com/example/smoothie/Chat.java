@@ -24,7 +24,7 @@ public class Chat extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
 
-        String menuname = getIntent().getStringExtra("menuname");
+        String Menuname = getIntent().getStringExtra("Menuname");
 
         // เชื่อมต่อ UI components
         textView = findViewById(R.id.sellerNameTextView);
@@ -32,11 +32,11 @@ public class Chat extends AppCompatActivity {
         bSend = findViewById(R.id.bSend);
 
         // ตรวจสอบค่า menuname
-        if (menuname == null || menuname.isEmpty()) {
-            menuname = "Unknown Seller"; // ใช้ข้อความแทนที่
+        if (Menuname == null || Menuname.isEmpty()) {
+            Menuname = "Menu"; // ใช้ข้อความแทนที่
         }
 
-        textView.setText("Chat with " + menuname);
+        textView.setText(" Review " + Menuname);
 
         bSend.setOnClickListener(v -> {
             String message = etInputText.getText().toString();

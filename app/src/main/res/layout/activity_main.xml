@@ -11,21 +11,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="รายการ"
-        app:layout_constraintBottom_toTopOf="@id/imageView"
+        app:layout_constraintBottom_toTopOf="@id/gifImageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/gifImageView"
         android:layout_width="373dp"
         android:layout_height="287dp"
         app:layout_constraintBottom_toTopOf="@id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        app:srcCompat="@drawable/smoothie" />
-
+        app:layout_constraintTop_toBottomOf="@id/textView" />
 
     <TextView
         android:id="@+id/textView2"
@@ -35,7 +33,7 @@
         app:layout_constraintBottom_toTopOf="@id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView" />
+        app:layout_constraintTop_toBottomOf="@id/gifImageView" />
 
     <Button
         android:id="@+id/button"
